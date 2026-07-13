@@ -8,52 +8,7 @@ This project was built to get hands-on experience with AWS serverless services a
 
 ## 🚀 Architecture
 
-```
-                 Create Short URL
-
-          POST /shorten
-                │
-                ▼
-          API Gateway
-                │
-                ▼
-      shorten-url Lambda
-                │
-                ▼
-           DynamoDB
-                │
-      Store URL Mapping
-                │
-                ▼
-      Return Short URL
-
-
-
---------------------------------------------
-
-
-
-          Open Short URL
-
-      GET /{shortCode}
-                │
-                ▼
-          API Gateway
-                │
-                ▼
-      redirect-url Lambda
-                │
-                ▼
-           DynamoDB
-                │
-      Fetch Original URL
-                │
-                ▼
-      HTTP 301 Redirect
-                │
-                ▼
-      Original Website Opens
-```
+<img width="2720" height="1040" alt="url_shortener_architecture" src="https://github.com/user-attachments/assets/141a40d8-61ca-4977-8bfa-25e5189931c5" />
 
 ---
 
